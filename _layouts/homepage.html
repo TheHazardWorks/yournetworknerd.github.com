@@ -77,14 +77,16 @@
     </p>
     <div class="row card-deck">
         {% for project in site.projects %}
-        <div class="card bg-darker">
+        <div class="card bg-dark col-md-3">
             <img class="card-img-top" src="{{ project.image }}" alt="">
             <div class="card-body">
                 <h5 class="card-title text-link">{{ project.title }}</h5>
                 <p class="card-text">{{ project.description }}</p>
             </div>
             <div class="card-footer">
-                <a href="{{ project.link }}" target="_blank">Visit &rArr;</a>
+                <a href="{{ project.link }}" class="text-primary" target="_blank">
+                    <span>Visit &RightArrow;</span>
+                </a>
             </div>
         </div>
         {% endfor %}
