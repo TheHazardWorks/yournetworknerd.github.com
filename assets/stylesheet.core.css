@@ -1,0 +1,61 @@
+:root {
+    --color-light: #F3F3F3;
+    --color-dark: #292152;
+    --color-darker: #181029;
+    --color-blue: #394281;
+    --color-red: #DB4343;
+}
+.core-font { font-family: 'Audiowide' !important; }
+.text-primary { color: var(--color-red) !important }
+.text-light { color: var(--color-light) }
+.text-dark { color: var(--color-dark) }
+.text-link { color: var(--color-red) }
+.text-link:hover, .text-link:focus { color: var(--color-orange) !important; text-decoration: none; }
+.btn-primary { 
+    background-color: var(--color-blue) !important; 
+    color: var(--color-light) !important;
+    transition: all 0.5s; 
+}
+.btn-primary:hover, .btn-primary:focus { 
+    background-color: var(--color-red) !important;
+    color: var(--color-dark) !important
+}
+.bg-dark {
+    background-color: var(--color-dark) !important;
+}
+.bg-darker {
+    background-color: var(--color-darker) !important; 
+}
+.bg-navbar {
+    background-color: rgba(0,0,0,0.3) !important;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+.avatar {
+    height: 250px;
+    width: auto;
+    border-radius: 50%;
+    box-shadow: 
+        0px 5px 2px var(--color-red),
+        2px 3px 2px var(--color-red),
+        -2px 3px 2px var(--color-red);
+}
+.dark-shadow {
+    text-shadow: 
+        0px 5px 2px var(--color-dark),
+        2px 3px 2px var(--color-dark),
+        -2px 3px 2px var(--color-dark);
+}
+.light-shadow {
+    text-shadow: 
+        0px 5px 2px var(--color-light),
+        2px 3px 2px var(--color-light),
+        -2px 3px 2px var(--color-light);
+}
+.red-shadow {
+    text-shadow: 
+        0px 5px 2px var(--color-red),
+        2px 3px 2px var(--color-red),
+        -2px 3px 2px var(--color-red);
+}
