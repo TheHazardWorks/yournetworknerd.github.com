@@ -3,3 +3,6 @@ markdown: kramdown
 title: YourNetworkNerd
 description: One Single Nerd, One Million Lines
 social: /assets/avatar.gif
+
+collections:
+  projects:
