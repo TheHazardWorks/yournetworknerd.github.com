@@ -49,6 +49,12 @@
 .dropdown-toggle::after {
     display: none;
 }
+.avatar {
+    box-shadow: 
+        0px 5px 2px var(--color-red),
+        2px 3px 2px var(--color-red),
+        -2px 3px 2px var(--color-red);
+}
 .dark-shadow {
     text-shadow: 
         0px 5px 2px var(--color-dark),
@@ -70,7 +76,7 @@
 </style>
 </head>
 <body class="bg-darker text-light">
-<nav class="navbar navbar-expand-lg navbar-dark bg-red text-light fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark text-light fixed-top">
     <a class="navbar-brand core-font" href="#">YourNetworkNerd</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
         <span class="navbar-toggler-icon"></span>
@@ -108,6 +114,12 @@
         </ul>
     </div>
 </nav>
+<br><br>
+<div class="jumbotron text-center">
+    <img class="avatar" src="avatar.gif" alt="">
+    <br>
+    <h1 class="red-shadow core-font">YourNetworkNerd</h1>
+</div>
 </body>
 <script src="https://kit.fontawesome.com/0909f1d07b.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
