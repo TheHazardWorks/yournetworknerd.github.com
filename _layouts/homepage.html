@@ -70,6 +70,26 @@
     not and that is just about all I have to say on the matter.
     </p>
 </div>
+<div id="projects" class="container text-left text-light">
+    <h3 class="red-shadow core-font">Latest Projects!</h3>
+    <p>
+    I like to create things and resources that people can use. Check out some of them below!
+    </p>
+    <div class="row card-deck">
+        {% for project in site.projects %}
+        <div class="card bg-darker">
+            <img class="card-img-top" src="{{ project.image }}" alt="">
+            <div class="card-body">
+                <h5 class="card-title text-link">{{ project.title }}</h5>
+                <p class="card-text">{{ project.description }}</p>
+            </div>
+            <div class="card-footer">
+                <a href="{{ project.link }}" target="_blank">Visit &rArr;</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
 <div id="donate" class="container text-left text-light">
     <h3 class="red-shadow core-font">Wanna Donate?</h3>
     <p>
