@@ -46,6 +46,9 @@
 .bg-darker {
     background-color: var(--color-darker) !important; 
 }
+.bg-navbar {
+    background-color: rgba(0,0,0,0.3) !important;
+}
 .dropdown-toggle::after {
     display: none;
 }
@@ -79,7 +82,7 @@
 </style>
 </head>
 <body class="bg-darker text-light">
-<nav class="navbar navbar-expand-lg navbar-dark text-light fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-navbar text-light fixed-top">
     <a class="navbar-brand core-font" href="#">YourNetworkNerd</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
         <span class="navbar-toggler-icon"></span>
@@ -117,7 +120,6 @@
         </ul>
     </div>
 </nav>
-<br><br>
 <div class="jumbotron text-center bg-dark">
     <img class="avatar" src="avatar.gif" alt="">
     <br>
