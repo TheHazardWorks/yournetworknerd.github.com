@@ -4,71 +4,47 @@
 <!--[if IE 8]><html class="preIE9" lang="en-US"><![endif]-->
 <!--[if gte IE 9]><!--><html lang="en-US"><!--<![endif]-->
 <head>
-<title>SevenOhSeven</title>
+<title>YourNetworkNerd</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author" content="SevenOhSeven (twitter:@YourNetworkNerd)">
-<meta name="theme-color" content="#D8513F">
+<meta name="author" content="YourNetworkNerd (https://twitter.com/YourNetworkNerd)">
+<meta name="theme-color" content="#DB4343">
 <meta property="og:title" content="SevenOhSeven">
 <meta property="og:description" content="Your Local Network Nerd! Webapp and Software Engineer.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="http://yournetworknerd.github.io/">
-<meta property="og:image" content="https://i.imgur.com/AlQUN9m.png">
+<meta property="og:image" content="https://pbs.twimg.com/profile_images/1140106042996428800/RupQbN40_400x400.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" crossorigin="anonymous">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
 <style type="text/css">
 :root {
-    --color-light: #F7F7F7;
-    --color-yellow: #FFD455;
-    --color-dark: #3F3F3F;
-    --color-red: #D8513F;
-    --color-orange: #F9914F;
-    --color-peach: #F9CA89;
+    --color-light: #F3F3F3;
+    --color-dark: #292152;
+    --color-darker: #181029;
+    --color-blue: #394281;
+    --color-red: #DB4343;
 }
-
-a, input, button { outline: none !important; }
-
-img {
-    box-shadow: 
-        0px 5px 2px var(--color-dark),
-        2px 3px 2px var(--color-dark),
-        -2px 3px 2px var(--color-dark);
-}
-
 .core-font { font-family: 'Audiowide' !important; }
-
 .text-primary { color: var(--color-red) !important }
 .text-light { color: var(--color-light) }
 .text-dark { color: var(--color-dark) }
 .text-link { color: var(--color-red) }
 .text-link:hover, .text-link:focus { color: var(--color-orange) !important; text-decoration: none; }
 .btn-primary { 
-    background-color: var(--color-red) !important; 
+    background-color: var(--color-blue) !important; 
     color: var(--color-light) !important;
     transition: all 0.5s; 
 }
 .btn-primary:hover, .btn-primary:focus { 
-    background-color: var(--color-orange) !important;
+    background-color: var(--color-red) !important;
     color: var(--color-dark) !important
 }
 .bg-dark {
     background-color: var(--color-dark) !important;
 }
-.bg-light {
-    background-color: var(--color-light) !important;
-}
-.bg-red {
-    background-color: var(--color-red) !important;
-}
-.bg-yellow {
-    background-color: var(--color-yellow) !important;
-}
-.navbar-brand {
-    text-shadow: 
-        0px 3px 1px var(--color-dark),
-        1px 2px 1px var(--color-dark),
-        -1px 2px 1px var(--color-dark);
+.bg-darker {
+    background-color: var(--color-darker) !important; 
 }
 .dropdown-toggle::after {
     display: none;
@@ -85,166 +61,9 @@ img {
         2px 3px 2px var(--color-light),
         -2px 3px 2px var(--color-light);
 }
-
-aside { z-index: 1500 !important; }
-.topPane, .bottomPane {
-    position: fixed;
-    background-color: var(--color-dark);
-    height: 50vh;
-    width: 100%;
-    top: 0;
-    left: 0;
-}
-.bottomPane { 
-    top: 50vh; 
-}
-.bannerWrapper {
-    position: fixed;
-    width: 100%;
-    top: calc(50% - 60px);
-    left: 0;
-}
-.banner {
-    overflow: hidden;
-    position: relative;
-    background: var(--color-red);
-    width: 100%;
-    transform: skewY(-3deg) scaleY(1);
-    height: 160px;
-}
-.banner h1, .banner h2 {
-    margin: 0;
-    height: 80px;
-    color: var(--color-dark);
-}
-.banner h1 {
-    font-size: 3em;
-    color: var(--color-light);
-    text-shadow: 
-        0px 5px 2px var(--color-dark),
-        2px 3px 2px var(--color-dark),
-        -2px 3px 2px var(--color-dark);
-}
-.banner h2 {
-    font-size: 2em;
-    text-shadow: 0 0 6px var(--color-light);
-}
 </style>
 </head>
-<body class="bg-red text-light">
-<nav class="navbar navbar-expand-lg navbar-dark bg-red text-light fixed-top">
-    <a class="navbar-brand core-font" href="#">SevenOhSeven</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#about"><i class="fas fa-desktop"></i> ABOUT</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#projects"><i class="fas fa-code-merge"></i> PROJECTS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#donate"><i class="fas fa-donate"></i> DONATE</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownContact" data-toggle="dropdown">
-                    <span><i class="fas fa-bars"></i> CONTACT</span>
-                </a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownContact">
-                    <a class="dropdown-item text-link" href="https://twitter.com/YourNetworkNerd">
-                        <span><i class="fab fa-twitter"></i> Twitter</span>
-                    </a>
-                    <a class="dropdown-item text-link" href="https://discord.gg/VG87Snx">
-                        <span><i class="fab fa-discord"></i> Discord</span>
-                    </a>
-                    <a class="dropdown-item text-link" href="https://github.com/YourNetworkNerd">
-                        <span><i class="fab fa-github"></i> Github</span>
-                    </a>
-                    <a class="dropdown-item text-link" href="mailto:hello@sevenohseven.dev">
-                        <span><i class="fas fa-envelope"></i> Email</span>
-                    </a>
-                </div>
-            </li>
-        </ul>
-    </div>
-</nav>
-<div class="jumbotron text-center" style="background-image: url(https://i.imgur.com/ncdZeC0.jpg); background-size: cover;">
-    <img src="https://i.imgur.com/AlQUN9m.png" alt="" style="border-radius: 50%; height: 200px;">
-    <br><br>
-    <h1 class="text-light dark-shadow core-font">SevenOhSeven</h1>
-    <h3 class="dark-shadow text-primary">Your Local Network Nerd!</h3>
-</div>
-<div id="about" class="bg-dark text-center" style="padding-top: 10px; padding-bottom: 10px;">
-    <div class="container">
-        <h1 class="light-shadow text-primary core-font">About Seven</h1>
-        <p class="font-weight-bold">
-        <i>"707 (Real name Saeyoung Choi, Baptismal name Luciel Choi) often referred as Seven, is one of the Deep Story 
-        characters available in Mystic Messenger. He is a hacker who can quickly find information on anything he can get 
-        his hands on." - <a class="text-link" href="https://mystic-messenger.fandom.com/wiki/707">Mystic Messenger</a></i>
-        <br><br>
-        That is an excerpt from the official wiki page on that character. I've been using this character as a bit of a
-        person on the internet! I am a programmer of 9 years and musician of 12. I like to relax and game with friends and
-        love a good anime from time to time.
-        <br><br>
-        Why use this character? Well it's nothing formal. I do not have any rights to this character but many in my social
-        group who I work and code for/with told me that our personalities are simmilar and I picked him up! Who doesn't like
-        a character in something they can relate to!
-        </p>
-    </div>
-</div>
-<div id="projects" class="bg-yellow text-dark text-center" style="padding-top: 10px; padding-bottom: 10px;">
-    <div class="container">
-        <h1 class="dark-shadow text-primary core-font">Current Projects</h1>
-        <p class="font-weight-bold">
-        I have various projects I am working on. Some that can be publicly found over on my Github and others that can
-        be found on this website. Mostly I spend my time working on platforms like Discord where their API is a tool that
-        I happen to use daily.
-        <br><br>
-        Outside of the half a dozen discord projects I am also helping administrate for a friend who goes by Nai Nai. I am
-        the administrator for both her <a class="text-link" href="https://discord.gg/ajh5x7Z" target="_blank">Discord Server</a> 
-        and her <a class="text-link" href="https://buggles.ml" target="_blank">Website</a> and this eats up a fair share of my
-        available time.
-        <br><br>
-        I plan on filling this out a bit more in the future with an actual portfolio so bare with me for now!
-        </p>
-    </div>
-</div>
-<div id="donate" class="bg-dark text-center" style="padding-top: 10px; padding-bottom: 10px;">
-    <div class="container">
-        <h1 class="light-shadow text-primary core-font">Donate</h1>
-        <p class="font-weight-bold">
-        I don't know why you are even reading this section honestly! But if you are then I thank you for even that much!
-        It means a lot to me when people consider supporting independant businesses, projects and services. I have nothing
-        but respect for them and I'm glad you have enough to read this.
-        <br><br>
-        I'm opening up a private Discord Server soon enough that people can access when they donate to me that gives them a
-        special reward in it. I hope you enjoy it if you do donate and thank you if you do.
-        </p>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-            <input type="hidden" name="cmd" value="_s-xclick" />
-            <input type="hidden" name="hosted_button_id" value="VHTU4R3SE4TDG" />
-            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-        </form>
-    </div>
-</div>
-<div id="donate" class="bg-red text-dark text-center" style="padding-top: 10px;">
-    <div class="container">
-        <p>&copy; SevenOhSeven 2019</p>
-    </div>
-</div>
-<aside>
-    <div class="topPane"></div>
-    <div class="bottomPane"></div>
-    <div class="bannerWrapper">
-        <div class="banner">
-            <h1><span class="bannerTop core-font">SevenOhSeven</span></h1>
-            <h2><span class="bannerBottom core-font">Your Local Network Nerd!</span></h2>
-        </div>
-    </div>
-</aside>
+<body>
 </body>
 <script src="https://kit.fontawesome.com/0909f1d07b.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
@@ -252,45 +71,4 @@ aside { z-index: 1500 !important; }
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
-<script type="text/javascript">
-let animTimeline = anime.timeline();
-
-animTimeline.add({
-    targets: '.banner',
-    duration: 200,
-    skewY: [-3, -3],
-    scaleY: [0, 1],
-    opacity: [0, 1],
-    easing: "easeInCubic"
-}).add({
-    targets: '.banner h1',
-    translateY: '1em',
-    translateX: [-109, window.innerWidth],
-    easing: [0,.96,1,.04],
-    opacity: [0.5, 1, 0.5],
-    duration: 2800
-}).add({
-    targets: '.banner h2',
-    translateX: [window.innerWidth, -208],
-    easing: [0,.96,1,.04],
-    duration: 2800,
-    opacity: [0.5, 1, 0.5],
-    offset: '-=2800'
-}).add({
-    targets: ['.banner', '.bannerWrapper'],
-    duration: 400,
-    skewY: 0,
-    scaleY: [1, 0],
-    easing: 'easeInCubic'
-}).add({
-    targets: '.topPane',
-    translateY: '-50vh',
-    duration: 900,
-    easing: 'easeInOutQuint'
-}).add({
-    targets: '.bottomPane',
-    translateY: '50vh',
-    offset: '-=500'
-});
-</script>
 </html>
