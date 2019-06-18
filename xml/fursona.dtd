@@ -1,0 +1,17 @@
+<!ENTITY markup "Fursona Markup Language">
+<!ENTITY author "YourNetworkNerd">
+
+<!ELEMENT fursona (creator,refsheet,weapons?,home?)>
+<!ATTLIST fursona name CDATA #REQUIRED>
+<!ATTLIST fursona species CDATA #REQUIRED>
+<!ATTLIST fursona gender CDATA #REQUIRED>
+
+<!ELEMENT creator (name, email, social-account)>
+<!ELEMENT created (#CDATA)>
+<!ELEMENT refsheet (#CDATA)>
+<!ELEMENT weapons (#CDATA)>
+<!ELEMENT home (#CDATA)>
+
+<!ELEMENT name (#CDATA)>
+<!ELEMENT email (#CDATA>
+<!ELEMENT social-account (#CDATA)>
