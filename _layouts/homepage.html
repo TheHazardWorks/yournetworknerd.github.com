@@ -94,6 +94,35 @@
     </div>
 </div>
 <br><br>
+<div id="posts" class="container text-left text-light">
+    <h3 class="red-shadow core-font">Latest Posts!</h3>
+    <p>
+    Here are the latest posts I've made about various things
+    </p>
+    <div class="card-deck">
+        {% for post in site.posts %}
+        <div class="card bg-dark">
+            <div class="row no-gutters">
+                <div class="col-md-2">
+                    <img src="{{ post.image }}" class="card-img" alt="">
+                </div>
+                <div class="col-md-10">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">{{ post.title }}</h5>
+                        <p class="card-text">{{ post.summary }}</p>
+                        <p class="card-text">
+                            <a class="btn btn-primary" href="{{ post.url }}">
+                                <span>Read More &RightArrow;</span>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<br><br>
 <div id="donate" class="container text-left text-light">
     <h3 class="red-shadow core-font">Wanna Donate?</h3>
     <p>
