@@ -75,21 +75,23 @@
     <p>
     I like to create things and resources that people can use. Check out some of them below!
     </p>
-    <div class="card-deck">
-        {% for project in site.projects %}
-        <div class="card bg-dark">
-            <img class="card-img-top" src="{{ project.image }}" alt="">
-            <div class="card-body">
-                <h5 class="card-title text-primary">{{ project.title }}</h5>
-                <p class="card-text">{{ project.description }}</p>
+    <div class="container">
+        <div class="card-deck">
+            {% for project in site.projects %}
+            <div class="card bg-dark">
+                <img class="card-img-top" src="{{ project.image }}" alt="">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">{{ project.title }}</h5>
+                    <p class="card-text">{{ project.description }}</p>
+                </div>
+                <div class="card-footer">
+                    <a href="{{ project.link }}" class="text-link" target="_blank">
+                        <span>Visit &RightArrow;</span>
+                    </a>
+                </div>
             </div>
-            <div class="card-footer">
-                <a href="{{ project.link }}" class="text-link" target="_blank">
-                    <span>Visit &RightArrow;</span>
-                </a>
-            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 </div>
 <div id="donate" class="container text-left text-light">
