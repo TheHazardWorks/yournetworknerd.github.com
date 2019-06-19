@@ -21,7 +21,7 @@
 </head>
 <body class="bg-darker text-light">
 <nav class="navbar navbar-expand-lg navbar-dark bg-navbar text-light fixed-top">
-    <a class="navbar-brand core-font" href="#">YourNetworkNerd</a>
+    <a class="navbar-brand core-font" href="/">YourNetworkNerd</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -32,6 +32,21 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#projects"><i class="fas fa-code-merge"></i> PROJECTS</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownContact" data-toggle="dropdown">
+                    <span><i class="fas fa-bars"></i> BLOG</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownContact">
+                    <a class="dropdown-item text-link" href="/blog">
+                        <span><i class="fab fa-comments-alt"></i> All Posts</span>
+                    </a>
+                    {% for post in site.posts limit:6 %}
+                    <a class="dropdown-item text-link" href="{{ post.url }}">
+                        <span><i class="fab fa-comment-alt"></i> {{ post.title }} ({{ post.date | date_to_string }})</span>
+                    </a>
+                    {% endfor %}
+                </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#donate"><i class="fas fa-donate"></i> DONATE</a>
