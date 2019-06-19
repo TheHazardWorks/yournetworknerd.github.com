@@ -25,7 +25,7 @@
 </head>
 <body class="bg-darker text-light">
 <nav class="navbar navbar-expand-lg navbar-dark bg-navbar text-light fixed-top">
-    <a class="navbar-brand core-font" href="#">YourNetworkNerd</a>
+    <a class="navbar-brand core-font" href="/">YourNetworkNerd</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -67,9 +67,9 @@
         <img class="avatar" src="{{ page.image }}" alt="">
     {% endif %}
     <br><br>
-    <div class="container rounded" style="background: rgba(0,0,0,0.8)">
+    <div class="container rounded" style="background: rgba(0,0,0,0.9)">
         <h1 class="red-shadow core-font">{{ page.title }}</h1>
-        <p class="text-muted">{{ page.date | date_to_long_string: "ordinal", "US" }}</p>
+        <p class="text-muted">Posted: {{ page.date | date_to_long_string: "ordinal", "US" }}</p>
     </div>
 </div>
 <div class="container text-left">
