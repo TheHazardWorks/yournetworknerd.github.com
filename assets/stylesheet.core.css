@@ -10,7 +10,7 @@
 .text-light { color: var(--color-light) }
 .text-dark { color: var(--color-dark) }
 .text-link { color: var(--color-red) }
-.text-link:hover, .text-link:focus { color: var(--color-orange) !important; text-decoration: none; }
+.text-link:hover, .text-link:focus { color: var(--color-blue) !important; text-decoration: none; }
 .btn-primary { 
     background-color: var(--color-blue) !important; 
     color: var(--color-light) !important;
