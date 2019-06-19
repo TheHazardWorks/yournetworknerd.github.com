@@ -112,7 +112,10 @@
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h5 class="card-title text-primary">{{ post.title }}</h5>
+                        <h5 class="card-title text-primary">
+                            <span>{{ post.title }} </span>
+                            <small class="text-muted">{{ page.date | date_to_long_string: "ordinal", "US" }}</small>
+                        </h5>
                         <p class="card-text">{{ post.summary }}</p>
                         <p class="card-text">
                             <a class="btn btn-primary" href="{{ post.url }}">
