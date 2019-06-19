@@ -103,14 +103,14 @@
         {% for post in site.posts %}
         <div class="card bg-dark">
             <div class="row no-gutters">
-                <div class="col-md-2">
+                <div class="col-md-4">
                     {% if post.image == null %}
                         <img src="{{ post.banner }}" class="card-img" alt="">
                     {% else %}
                         <img src="{{ post.image }}" class="card-img" alt="">
                     {% endif %}
                 </div>
-                <div class="col-md-10">
+                <div class="col-md-8">
                     <div class="card-body">
                         <h5 class="card-title text-primary">{{ post.title }}</h5>
                         <p class="card-text">{{ post.summary }}</p>
