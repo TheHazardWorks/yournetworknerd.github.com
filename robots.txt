@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://kaibacorportation.github.io/sitemap.xml
