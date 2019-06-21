@@ -1,0 +1,18 @@
+---
+layout: nil
+---
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+        <loc>https://yournetworknerd.github.io/</loc>
+        <priority>1.00</priority>
+    </url>
+    {% for post in site.posts %}
+    <url>
+        <loc>https://yournetworknerd.github.io{{ post.url }}</loc>
+        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+        <priority>0.64</priority>
+    </url>
+    {% endfor %}
+</urlset>
