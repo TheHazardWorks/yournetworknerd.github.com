@@ -1,0 +1,25 @@
+  
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>{{ site.title }}</title>
+    <link href="https://yournetworknerd.github.io/atom.xml" rel="self" />
+    <link href="https://yournetworknerd.github.io/" />
+    <updated>{{ site.time | date_to_xmlschema }}</updated>
+    <id>https://yournetworknerd.github.io/</id>
+    <icon>https://yournetworknerd.github.io/assets/avatar.gif</icon>
+    <author>
+        <name>YourNetworkNerd</name>
+    </author>
+    {% for post in site.posts %}
+    <entry>
+        <id>https://yournetworknerd.github.io{{ post.id }}</id>
+        <title>{{ post.title }}</title>
+        <link href="https://yournetworknerd.github.io{{ post.url }}" />
+        <updated>{{ post.date | date_to_xmlschema }}</updated>
+        <content type="html">{{ post.content | xml_escape }}</content>
+    </entry>
+    {% endfor %}
+</feed>
